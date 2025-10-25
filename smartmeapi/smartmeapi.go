@@ -14,6 +14,7 @@ import (
 	"strconv"
 )
 
+//go:generate stringer -type=MeterEnergyType
 type MeterEnergyType int32
 
 // see https://api.smart-me.com/swagger/ for the definitions
@@ -35,6 +36,7 @@ const (
 	MeterTypeWMBusGateway  MeterEnergyType = 14
 )
 
+//go:generate stringer -type=MeterSubType
 type MeterSubType int32
 
 const (
@@ -50,6 +52,7 @@ const (
 	MeterSubTypeVirtualBattery  MeterSubType = 9
 )
 
+//go:generate stringer -type=MeterFamilyType
 type MeterFamilyType int32
 
 const (
